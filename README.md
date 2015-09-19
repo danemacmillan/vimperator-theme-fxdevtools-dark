@@ -6,6 +6,8 @@ Firefox's dark DevTools / DevEdition theme.
 
 It is still a work in progress.
 
+![](screenshots/screenshot1.png)
+
 # Install
 
 - Copy or symlink the `fxdevtools-dark.vimp` file into the `~/.vimperator/colors`
