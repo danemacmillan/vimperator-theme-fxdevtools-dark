@@ -8,7 +8,7 @@ It is still a work in progress.
 
 ![](screenshots/screenshot1.png)
 
-# Install
+## Install
 
 - Copy or symlink the `fxdevtools-dark.vimp` file into the `~/.vimperator/colors`
 directory.
@@ -17,10 +17,10 @@ directory.
 
 - Optionally load it from a `.vimperatorrc` file.
 
-# Author
+## Author
 
 [Dane MacMillan](https://danemacmillan.com)
 
-# License
+## License
 
 MIT
