@@ -45,11 +45,33 @@ highlight WarningMsg color: #dc322f;  background: #002b36;  font-size: 12px;
 " TODO: consider not using highlight syntax and just piping all styling
 " directly through `!style` call.
 
-style! -name=tab chrome://* <<EOF
-.tabbrowser-strip {
-    background: #002b36 !important;
-}
+style -name chrome_tabs chrome://* <<EOF
+    .tabbrowser-strip {
+        background: #002b36 !important;
+    }
+
+    /* Remove close tab button */
+    .tab-close-button {
+        display: none;
+    }
+
+    /* Remove all that space to the left- and right-most section of tabs bar */
+    #main-window[tabsintitlebar] #TabsToolbar {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 EOF
+
+style -name about_blank about:blank <<EOM
+    * {
+        background: #14171A;
+    }
+EOM
+style -name about_newtab about:newtab <<EOM
+    * {
+        background: #14171A;
+    }
+EOM
 
 javascript <<EOF
 EOF
