@@ -60,6 +60,15 @@ style -name chrome_tabs chrome://* <<EOF
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+		/* Remove min/max/close buttons top left */
+		#titlebar-placeholder-on-TabsToolbar-for-captions-buttons,
+		#titlebar-buttonbox-container {
+			display: none;
+		}
+		#titlebar-buttonbox{
+			margin-left: -40px;
+		}
 EOF
 
 style -name about_blank about:blank <<EOM
